@@ -1,0 +1,6 @@
+framework module Pods_PokemonSDK_Example {
+  umbrella header "Pods-PokemonSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

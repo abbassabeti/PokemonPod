@@ -39,14 +39,14 @@
 		607FACE51AFB9204008FA782 /* PokemonSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokemonSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		77C5F83F210289BF01FA82C4 /* PokemonSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PokemonSDK.podspec; path = ../PokemonSDK.podspec; sourceTree = "<group>"; };
+		77C5F83F210289BF01FA82C4 /* PokemonSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PokemonSDK.podspec; path = ../PokemonSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7F9ACA4200FE3B8EC87C2D6A /* Pods-PokemonSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-PokemonSDK_Tests/Pods-PokemonSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A94AAC4EB099E2A26123CBA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A94AAC4EB099E2A26123CBA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B1BBD522F2534E4DDCCB2C4C /* Pods-PokemonSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-PokemonSDK_Example/Pods-PokemonSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E2ADA2639D5B4E30F8F14ED3 /* Pods-PokemonSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-PokemonSDK_Example/Pods-PokemonSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F2639F8D40E5B4F593A93DBA /* Pods_PokemonSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F268F69B4FAAEA6B269B0936 /* Pods_PokemonSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF560F103E63FB330B26E00C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FF560F103E63FB330B26E00C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				527D81308AF09F5A67721145 /* Pods-PokemonSDK_Tests.debug.xcconfig */,
 				7F9ACA4200FE3B8EC87C2D6A /* Pods-PokemonSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
