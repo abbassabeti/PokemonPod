@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PokemonSDK
 
 class ViewController: UIViewController {
 
