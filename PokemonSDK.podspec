@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PokemonSDK'
-  s.version          = '0.0.7'
-  s.summary          = 'A short description of PokemonSDK.'
+  s.version          = '0.0.8'
+  s.summary          = 'A Pod which is for utilizing Pokemon Open Source API'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  A Pod which is for utilizing Pokemon Open Source API. This uses Moya as Networking Tools and RxSwift for stream of data flow in the app. It also uses CoreData as an ORM to store items in the database.
                        DESC
 
   s.homepage         = 'https://github.com/abbassabeti/PokemonPod'
@@ -27,7 +27,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'Abbas Sabeti' => 'abbassabetinejad@gmail.com' }
   s.source           = { :git => 'https://github.com/abbassabeti/PokemonPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.swift_version = '5.0'
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'PokemonSDK/Classes/**/*'
