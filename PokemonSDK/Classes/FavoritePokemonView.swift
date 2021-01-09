@@ -68,7 +68,7 @@ extension FavoritePokemonView : UITableViewDelegate{
 extension FavoritePokemonView : UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return UITableViewAutomaticDimension
     }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DBHelper.instance.pokemons.value.count
