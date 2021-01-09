@@ -50,7 +50,7 @@ public class PokemonFinderView : UIView {
         let _shakespeareTextView = UITextView()
         let _spritsCollectionView = setupCollectionView()
         let _saveButton = UIButton()
-        let _activityIndView = UIActivityIndicatorView(style: .large)
+        let _activityIndView = UIActivityIndicatorView(activityIndicatorStyle: .large)
         _activityIndView.color = .gray
         
         self.translatesAutoresizingMaskIntoConstraints = false

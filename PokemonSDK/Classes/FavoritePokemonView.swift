@@ -54,7 +54,7 @@ public class FavoritePokemonView : UIView {
         
         _tableView.delegate = self
         _tableView.dataSource = self
-        _tableView.rowHeight = UITableView.automaticDimension
+        _tableView.rowHeight = UITableViewAutomaticDimension
         _tableView.estimatedRowHeight = 150
         _tableView.register(SavedPokemonCell.self, forCellReuseIdentifier: "saved_item")
         _tableView.reloadData()
