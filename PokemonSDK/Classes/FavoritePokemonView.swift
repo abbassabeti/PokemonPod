@@ -54,7 +54,7 @@ public class FavoritePokemonView : UIView {
         
         _tableView.delegate = self
         _tableView.dataSource = self
-        _tableView.rowHeight = UITableViewAutomaticDimension
+        _tableView.rowHeight = UITableView.automaticDimension
         _tableView.estimatedRowHeight = 150
         _tableView.register(SavedPokemonCell.self, forCellReuseIdentifier: "saved_item")
         _tableView.reloadData()
@@ -68,7 +68,7 @@ extension FavoritePokemonView : UITableViewDelegate{
 extension FavoritePokemonView : UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return DBHelper.instance.pokemons.value.count
