@@ -31,6 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'PokemonSDK/Classes/**/*'
+  s.resources = 'PokemonSDK/Classes/*.xcdatamodeld'
   
   # s.resource_bundles = {
   #   'PokemonSDK' => ['PokemonSDK/Assets/*.png']

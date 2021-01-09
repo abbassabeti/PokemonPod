@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20C5048l" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="PokemonItem">
+    <entity name="PokemonItem" representedClassName="PokemonItem" syncable="YES" codeGenerationType="class">
+        <attribute name="defaultBack" optional="YES" attributeType="String"/>
+        <attribute name="defaultFront" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="shakespeareTranslations" optional="YES" attributeType="String"/>
+        <attribute name="shinyBack" optional="YES" attributeType="String"/>
+        <attribute name="shinyFront" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="PokemonItem" positionX="-63" positionY="-18" width="128" height="134"/>
+    </elements>
+</model>

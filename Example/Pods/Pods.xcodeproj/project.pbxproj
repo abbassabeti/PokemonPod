@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		018228C4760DF4F8B80630BC9ACCB39E /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594091E6966D51FDFA5ACE8A1D3F3102 /* DSL.swift */; };
 		02EDE6F260E8E95CAC741342606CBE65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
+		056BCA0325AA2C0800579F72 /* Pokemon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 056BCA0125AA2C0800579F72 /* Pokemon.xcdatamodeld */; };
 		05BBBAE525A9F40500B20735 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BBBAE425A9F40500B20735 /* Configs.swift */; };
 		05BBBB0C25A9FB4900B20735 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BBBAF925A9FB4800B20735 /* Reachability.swift */; };
 		05BBBB0D25A9FB4900B20735 /* StringsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BBBAFA25A9FB4800B20735 /* StringsExtensions.swift */; };
@@ -182,6 +183,7 @@
 /* Begin PBXFileReference section */
 		02FB94B1C35774660D1054E9C9511270 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		052BB171EB6EE439F34ECE05A0A927A1 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
+		056BCA0225AA2C0800579F72 /* Pokemon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pokemon.xcdatamodel; sourceTree = "<group>"; };
 		05BBBAE425A9F40500B20735 /* Configs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configs.swift; path = PokemonSDK/Classes/Configs.swift; sourceTree = "<group>"; };
 		05BBBAF925A9FB4800B20735 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = PokemonSDK/Classes/Reachability.swift; sourceTree = "<group>"; };
 		05BBBAFA25A9FB4800B20735 /* StringsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringsExtensions.swift; path = PokemonSDK/Classes/StringsExtensions.swift; sourceTree = "<group>"; };
@@ -587,6 +589,7 @@
 		C5703D64B942B078A2CD729787799367 /* PokemonSDK */ = {
 			isa = PBXGroup;
 			children = (
+				056BCA0125AA2C0800579F72 /* Pokemon.xcdatamodeld */,
 				05BBBB0925A9FB4900B20735 /* DBHelper.swift */,
 				05BBBB0A25A9FB4900B20735 /* ErrorResponse.swift */,
 				05BBBB0325A9FB4800B20735 /* ErrorTracker.swift */,
@@ -985,6 +988,7 @@
 				05BBBB1D25A9FB4900B20735 /* ErrorResponse.swift in Sources */,
 				05BBBB1525A9FB4900B20735 /* PokemonFinderViewModel.swift in Sources */,
 				05BBBB1C25A9FB4900B20735 /* DBHelper.swift in Sources */,
+				056BCA0325AA2C0800579F72 /* Pokemon.xcdatamodeld in Sources */,
 				05BBBB1725A9FB4900B20735 /* RestAPI.swift in Sources */,
 				05BBBB1025A9FB4900B20735 /* Networking.swift in Sources */,
 				05BBBB1625A9FB4900B20735 /* ErrorTracker.swift in Sources */,
@@ -1602,6 +1606,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		056BCA0125AA2C0800579F72 /* Pokemon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				056BCA0225AA2C0800579F72 /* Pokemon.xcdatamodel */,
+			);
+			currentVersion = 056BCA0225AA2C0800579F72 /* Pokemon.xcdatamodel */;
+			name = Pokemon.xcdatamodeld;
+			path = PokemonSDK/Classes/Pokemon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
