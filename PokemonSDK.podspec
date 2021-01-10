@@ -35,7 +35,12 @@ Pod::Spec.new do |s|
   s.source_files  = 'PokemonSDK/Classes', 'PokemonSDK/Classes/Pokemon.xcdatamodeld', 'PokemonSDK/Classes/Pokemon.xcdatamodeld/*.xcdatamodel'
   s.resources = [ 'PokemonSDK/Classes/*.xcdatamodeld','PokemonSDK/Classes/Pokemon.xcdatamodeld/*.xcdatamodel']
   s.preserve_paths = 'PokemonSDK/Classes/Pokemon.xcdatamodeld'
-    
+  
+  s.test_spec 'UnitTests' do |test_spec|
+        test_spec.source_files = 'PokemonSDK/UnitTests/*'
+        test_spec.dependency 'Nimble', '~> 8.0.9'
+        test_spec.dependency 'Quick', '~> 2.2.1'
+  end
   
   # s.resource_bundles = {
   #   'PokemonSDK' => ['PokemonSDK/Assets/*.png']

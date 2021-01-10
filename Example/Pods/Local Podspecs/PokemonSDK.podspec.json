@@ -1,22 +1,67 @@
 {
   "name": "PokemonSDK",
-  "version": "0.1.0",
-  "summary": "A short description of PokemonSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/39451059/PokemonSDK",
+  "version": "0.0.10",
+  "summary": "A Pod which is for utilizing Pokemon Open Source API",
+  "description": "A Pod which is for utilizing Pokemon Open Source API. This uses Moya as Networking Tools and RxSwift for stream of data flow in the app. It also uses CoreData as an ORM to store items in the database.",
+  "homepage": "https://github.com/abbassabeti/PokemonPod",
   "license": {
-    "type": "MIT",
+    "type": "TrueLayer",
     "file": "LICENSE"
   },
   "authors": {
-    "39451059": "abbassabetiii@gmail.com"
+    "Abbas Sabeti": "abbassabetinejad@gmail.com"
   },
   "source": {
-    "git": "https://github.com/39451059/PokemonSDK.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/abbassabeti/PokemonPod.git",
+    "tag": "0.0.10"
   },
+  "swift_versions": "5.0",
   "platforms": {
-    "ios": "9.0"
+    "ios": "11.0"
   },
-  "source_files": "PokemonSDK/Classes/**/*"
+  "source_files": [
+    "PokemonSDK/Classes",
+    "PokemonSDK/Classes/Pokemon.xcdatamodeld",
+    "PokemonSDK/Classes/Pokemon.xcdatamodeld/*.xcdatamodel"
+  ],
+  "resources": [
+    "PokemonSDK/Classes/*.xcdatamodeld",
+    "PokemonSDK/Classes/Pokemon.xcdatamodeld/*.xcdatamodel"
+  ],
+  "preserve_paths": "PokemonSDK/Classes/Pokemon.xcdatamodeld",
+  "frameworks": [
+    "UIKit",
+    "CoreData",
+    "Foundation"
+  ],
+  "dependencies": {
+    "Kingfisher": [
+
+    ],
+    "Moya/RxSwift": [
+      "14.0.0-beta.2"
+    ],
+    "RxCocoa": [
+
+    ],
+    "RxGesture": [
+
+    ]
+  },
+  "testspecs": [
+    {
+      "name": "UnitTests",
+      "test_type": "unit",
+      "source_files": "PokemonSDK/UnitTests/*",
+      "dependencies": {
+        "Nimble": [
+          "~> 8.0.9"
+        ],
+        "Quick": [
+          "~> 2.2.1"
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
 }

@@ -24,8 +24,8 @@ public class DBHelper : NSObject {
 
     lazy var persistentContainer: NSPersistentContainer = {
         
-            let frameworkBundle = Bundle(identifier: self.frameworkBundleID)
-            let modelURL = frameworkBundle!.url(forResource: self.dataModelName, withExtension: "momd")!
+            let frameworkBundle = Bundle(for: DBHelper.self)
+            let modelURL = frameworkBundle.url(forResource: self.dataModelName, withExtension: "momd")!
             let managedObjectModel =  NSManagedObjectModel(contentsOf: modelURL)
             
             let container = NSPersistentContainer(name: self.pokemonEntityName, managedObjectModel: managedObjectModel!)

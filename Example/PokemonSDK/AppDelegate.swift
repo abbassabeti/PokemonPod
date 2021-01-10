@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  PokemonSDK
 //
-//  Created by 39451059 on 01/09/2021.
-//  Copyright (c) 2021 39451059. All rights reserved.
+//  Created by Abbas on 01/09/2021.
+//  Copyright (c) 2021 Abbas. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }

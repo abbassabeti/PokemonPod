@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  PokemonSDK
 //
-//  Created by 39451059 on 01/09/2021.
-//  Copyright (c) 2021 39451059. All rights reserved.
+//  Created by Abbas on 01/09/2021.
+//  Copyright (c) 2021 Abbas. All rights reserved.
 //
 
 import UIKit

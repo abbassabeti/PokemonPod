@@ -1,27 +1,69 @@
 PODS:
+  - Alamofire (5.0.0-rc.2)
+  - Kingfisher (6.0.1)
+  - Moya/Core (14.0.0-beta.2):
+    - Alamofire (= 5.0.0-rc.2)
+  - Moya/RxSwift (14.0.0-beta.2):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - Nimble (8.0.9)
-  - PokemonSDK (0.1.0)
+  - PokemonSDK (0.0.10):
+    - Kingfisher
+    - Moya/RxSwift (= 14.0.0-beta.2)
+    - RxCocoa
+    - RxGesture
+  - PokemonSDK/UnitTests (0.0.10):
+    - Kingfisher
+    - Moya/RxSwift (= 14.0.0-beta.2)
+    - Nimble (~> 8.0.9)
+    - Quick (~> 2.2.1)
+    - RxCocoa
+    - RxGesture
   - Quick (2.2.1)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxGesture (3.0.2):
+    - RxCocoa (~> 5.1)
+    - RxSwift (~> 5.1)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
 
 DEPENDENCIES:
   - Nimble (~> 8.0.7)
   - PokemonSDK (from `../`)
+  - PokemonSDK/UnitTests (from `../`)
   - Quick (~> 2.2.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Kingfisher
+    - Moya
     - Nimble
     - Quick
+    - RxCocoa
+    - RxGesture
+    - RxRelay
+    - RxSwift
 
 EXTERNAL SOURCES:
   PokemonSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  Kingfisher: adde87a4f74f6a3845395769354efff593581740
+  Moya: 788e592b92fadb10e30d350ed1a9f75c91eb1368
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
-  PokemonSDK: 00834b8e543bcdddcdc95af2b1722f316eec7b28
+  PokemonSDK: 0e4f3c22f11959f62c87672bc453ff777e95800b
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
-PODFILE CHECKSUM: e47eb81f7306c65457af4f31111af998275aa050
+PODFILE CHECKSUM: 763b35fb6f398d89d7b1f27c26898aee49a7d209
 
 COCOAPODS: 1.10.1
