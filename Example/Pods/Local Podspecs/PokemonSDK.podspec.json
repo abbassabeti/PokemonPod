@@ -1,6 +1,6 @@
 {
   "name": "PokemonSDK",
-  "version": "0.0.10",
+  "version": "0.0.16",
   "summary": "A Pod which is for utilizing Pokemon Open Source API",
   "description": "A Pod which is for utilizing Pokemon Open Source API. This uses Moya as Networking Tools and RxSwift for stream of data flow in the app. It also uses CoreData as an ORM to store items in the database.",
   "homepage": "https://github.com/abbassabeti/PokemonPod",
@@ -13,22 +13,21 @@
   },
   "source": {
     "git": "https://github.com/abbassabeti/PokemonPod.git",
-    "tag": "0.0.10"
+    "tag": "0.0.16"
   },
   "swift_versions": "5.0",
   "platforms": {
     "ios": "11.0"
   },
   "source_files": [
-    "PokemonSDK/Classes",
-    "PokemonSDK/Classes/Pokemon.xcdatamodeld",
-    "PokemonSDK/Classes/Pokemon.xcdatamodeld/*.xcdatamodel"
+    "SDKPOD/Classes",
+    "SDKPOD/Assets"
   ],
   "resources": [
-    "PokemonSDK/Classes/*.xcdatamodeld",
-    "PokemonSDK/Classes/Pokemon.xcdatamodeld/*.xcdatamodel"
+    "SDKPOD/Assets/*.xcdatamodeld",
+    "SDKPOD/Assets/Pokemon.xcdatamodeld/*.xcdatamodel"
   ],
-  "preserve_paths": "PokemonSDK/Classes/Pokemon.xcdatamodeld",
+  "preserve_paths": "SDKPOD/Assets/Pokemon.xcdatamodeld",
   "frameworks": [
     "UIKit",
     "CoreData",
@@ -52,7 +51,7 @@
     {
       "name": "UnitTests",
       "test_type": "unit",
-      "source_files": "PokemonSDK/UnitTests/*",
+      "source_files": "SDKPOD/UnitTests/*",
       "dependencies": {
         "Nimble": [
           "~> 8.0.9"

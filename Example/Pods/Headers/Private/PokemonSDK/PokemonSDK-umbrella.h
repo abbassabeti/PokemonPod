@@ -1,0 +1,1 @@
+../../../../../SDKPOD/Assets/PokemonSDK-umbrella.h

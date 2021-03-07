@@ -13,8 +13,19 @@ import RxCocoa
 public class PokemonSDK{
 
     static let instance = PokemonSDK()
-    let provider: RestApi = RestApi(pokemonProvider: PokemonNetworking.pokemonNetworking())
+    var provider: RestApi = RestApi(pokemonProvider: PokemonNetworking.pokemonNetworking())
     let disposeBag = DisposeBag()
+    
+    var isMock : Bool = false {
+        didSet{
+            if (isMock){
+                provider = RestApi(pokemonProvider: PokemonNetworking.stubbingPokemonNetworking())
+            }else{
+                guard oldValue != isMock else {return}
+                provider = RestApi(pokemonProvider: PokemonNetworking.pokemonNetworking())
+            }
+        }
+    }
     
     public class func findPokemonSprite(name: String,view: PokemonFinderView? = nil,completion: @escaping (Sprites?) ->()){
         instance.provider.getPokemon(name: name).asDriver(onErrorJustReturn: .failure(PokemonError(unexpected: true))).drive(onNext: { (result) in

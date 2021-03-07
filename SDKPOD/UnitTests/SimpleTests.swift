@@ -11,6 +11,7 @@ import XCTest
 class PokemonSDKTests: XCTestCase {
 
     override func setUpWithError() throws {
+        PokemonSDK.instance.isMock = false // TODO: There is a problem with json mock files.
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 

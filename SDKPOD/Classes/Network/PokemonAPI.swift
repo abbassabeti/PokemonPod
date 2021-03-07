@@ -113,13 +113,32 @@ extension PokemonAPI: TargetType, ProductAPIType {
     }
 
     var sampleData: Data {
-        //TODO: add mock if needed
-        return Data()
+        switch self {
+        case .findPokemon: return getJSONFileData(name:"pokemon")
+        case .findSpecies: return getJSONFileData(name:"species")
+        case .translateShakespeare: return getJSONFileData(name:"shakespeare")
+            default:
+                return Data("".utf8)
+        }
     }
 
     var addXAuth: Bool {
         switch self {
         default: return true
         }
+    }
+    
+    func getJSONFileData(name: String) -> Data {
+        var data: Data? = nil
+        Bundle.allBundles.forEach { (bundle) in
+         if let path = bundle.url(forResource: name, withExtension: "json"){
+                do {
+                      let _data = try Data(contentsOf: path, options: .mappedIfSafe)
+                      data = _data
+                  } catch {
+                  }
+            }
+        }
+        return data ?? Data()
     }
 }
