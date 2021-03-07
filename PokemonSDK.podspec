@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PokemonSDK'
-  s.version          = '0.0.18'
+  s.version          = '0.0.19'
   s.summary          = 'A Pod which is for utilizing Pokemon Open Source API'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
 
   s.source_files  = 'SDKPOD/Classes/**/*'
-  s.source_files = 'SDKPOD/Classes', 'SDKPOD/Assets/Pokemon.xcdatamodeld', 'SDKPOD/Assets/Pokemon.xcdatamodeld/*.xcdatamodel'
+  s.source_files = 'SDKPOD/Classes/**/**/*'
   s.resources = [ 'SDKPOD/Assets/*.xcdatamodeld','SDKPOD/Assets/Pokemon.xcdatamodeld/*.xcdatamodel']
   s.preserve_paths = 'SDKPOD/Assets/Pokemon.xcdatamodeld'
   
