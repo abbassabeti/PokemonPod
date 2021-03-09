@@ -34,6 +34,12 @@ class SavedPokemonCell : UITableViewCell {
         let _imgView = UIImageView()
         let _nameLbl = UILabel()
         let _idLbl = UILabel()
+        
+        _imgView.accessibilityIdentifier = "favorite_image"
+        _nameLbl.accessibilityIdentifier = "favorite_name"
+        _idLbl.accessibilityIdentifier = "favorite_id"
+        self.accessibilityIdentifier = "favorite_cell"
+        self.contentView.accessibilityIdentifier = "favorite_content_view"
 //        let _backView = UIView()
 //        self.backgroundView = _backView
 //        print("holla back is\(self.backgroundView.debugDescription)")

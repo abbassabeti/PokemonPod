@@ -39,11 +39,14 @@ public class FavoritePokemonView : UIView {
     
     func setupView(){
         let _tableView = UITableView()
+        _tableView.accessibilityIdentifier = "favorite_table"
         self.translatesAutoresizingMaskIntoConstraints = false
         _tableView.translatesAutoresizingMaskIntoConstraints = false
         _tableView.backgroundColor = .white
         self.tableView = _tableView
         self.addSubview(_tableView)
+        
+        self.accessibilityIdentifier = "pokemon_favorite_view"
         
         NSLayoutConstraint.activate([
             _tableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),

@@ -35,9 +35,13 @@ public class PokemonSpriteCell : UICollectionViewCell {
     
     func setupView(){
         let _imgView = UIImageView()
+        _imgView.accessibilityIdentifier = "pokemon_img"
         _imgView.contentMode = .scaleAspectFit
         _imgView.translatesAutoresizingMaskIntoConstraints = false
         self.imgView = _imgView
+        
+        self.accessibilityIdentifier = "pokemon_cell"
+        self.contentView.accessibilityIdentifier = "pokemon_content_view"
         
         self.contentView.addSubview(_imgView)
         

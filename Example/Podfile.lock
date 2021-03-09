@@ -7,12 +7,12 @@ PODS:
     - Moya/Core
     - RxSwift (~> 5.0)
   - Nimble (8.0.9)
-  - PokemonSDK (0.0.16):
+  - PokemonSDK (0.0.19):
     - Kingfisher
     - Moya/RxSwift (= 14.0.0-beta.2)
     - RxCocoa
     - RxGesture
-  - PokemonSDK/UnitTests (0.0.16):
+  - PokemonSDK/UnitTests (0.0.19):
     - Kingfisher
     - Moya/RxSwift (= 14.0.0-beta.2)
     - Nimble (~> 8.0.9)
@@ -57,7 +57,7 @@ SPEC CHECKSUMS:
   Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
   Moya: 788e592b92fadb10e30d350ed1a9f75c91eb1368
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
-  PokemonSDK: 06743f6f9e3b246d14dddbc80bc7963376f48973
+  PokemonSDK: 2649c52b479118ca2c6544050bef949130523797
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxGesture: d6bd7447ca3a596c7a9702a6a2b6a2bb5d8bae54

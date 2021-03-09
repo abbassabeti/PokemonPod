@@ -53,6 +53,13 @@ public class PokemonFinderView : UIView {
         let _activityIndView = UIActivityIndicatorView()
         _activityIndView.color = .gray
         
+        _searchBarTextField.accessibilityIdentifier = "pokemon_text_field"
+        _shakespeareTextView.accessibilityIdentifier = "pokemon_shakespeare_text_view"
+        _spritsCollectionView.accessibilityIdentifier = "pokemon_collection_view"
+        _saveButton.accessibilityIdentifier = "pokemon_save_button"
+        _activityIndView.accessibilityIdentifier = "pokemon_activity_indicator"
+        self.accessibilityIdentifier = "pokemon_finder_view"
+        
         self.translatesAutoresizingMaskIntoConstraints = false
         _searchBarTextField.translatesAutoresizingMaskIntoConstraints = false
         _spritsCollectionView.translatesAutoresizingMaskIntoConstraints = false
