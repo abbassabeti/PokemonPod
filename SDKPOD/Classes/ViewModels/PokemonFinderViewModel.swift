@@ -88,6 +88,7 @@ public class PokemonFinderViewModel : NSObject {
                 }
                 return
             }
+            self?.pokemonModel = savedItem
             self?.delegate?.setSaveButtonState(state: true)
             let text = self?.provideTranslation(pokemon:savedItem,shakespeare:savedItem.shakespeare,error:nil) ?? ""
             self?.delegate?.setShakespeareText(text: text)
