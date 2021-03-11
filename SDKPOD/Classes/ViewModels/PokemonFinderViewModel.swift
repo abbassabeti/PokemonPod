@@ -75,6 +75,7 @@ public class PokemonFinderViewModel : NSObject {
                     view.acitivityIndicatorView?.startAnimating()
                 }
                 PokemonSDK.findPokemon(name: keyword,view: view) {[weak self] (pokemon) in
+                    self?.pokemonModel = pokemon
                     guard let url = pokemon?.species?.url else {return}
                     PokemonSDK.findPokemonShakespeare(url: url,view: view) {[weak self] (shakespeare,error) in
                         DispatchQueue.main.async {
