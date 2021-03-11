@@ -67,7 +67,9 @@ public class PokemonFinderViewModel : NSObject {
         view.searchBarTextField?.rx.text.distinctUntilChanged().debounce(.seconds(1), scheduler: MainScheduler.instance).asDriver(onErrorJustReturn: "").drive(onNext: {[weak self] (value) in
             guard let keyword = value else {return}
             guard keyword.count > 0 else {
+                self?.pokemonModel = nil
                 self?.delegate?.setShakespeareText(text: "")
+                self?.delegate?.reloadSprites()
                 return
             }
             guard let savedItem = DBHelper.containsItem(keyword: keyword) else {
