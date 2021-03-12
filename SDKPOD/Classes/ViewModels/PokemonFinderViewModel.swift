@@ -12,7 +12,7 @@ import RxSwift
 protocol PokemonViewModelDelegate : class {
     func reloadSprites()
     func setShakespeareText(text: String)
-    func setSaveButtonState(state: Bool)
+    func setSaveButtonState(state: Bool,enabled: Bool)
 }
 
 public class PokemonFinderViewModel : NSObject {
@@ -37,9 +37,9 @@ public class PokemonFinderViewModel : NSObject {
                 if let id = pokemonModel?.id {
                     let state = DBHelper.instance.pokemons.value.contains(where: {$0.id == id})
                     pokemonModel?.isFavorite = state
-                    delegate?.setSaveButtonState(state: state)
+                    delegate?.setSaveButtonState(state: state,enabled: true)
                 }else{
-                    delegate?.setSaveButtonState(state: false)
+                    delegate?.setSaveButtonState(state: false,enabled: true)
                 }
                 delegate?.reloadSprites()
                 if (pokemonModel?.shakespeare != nil){
@@ -48,6 +48,7 @@ public class PokemonFinderViewModel : NSObject {
             }else{
                 self.spritesList = []
                 self.delegate?.setShakespeareText(text: "")
+                self.delegate?.setSaveButtonState(state: false,enabled: false)
                 delegate?.reloadSprites()
             }
         }
@@ -93,7 +94,7 @@ public class PokemonFinderViewModel : NSObject {
                 return
             }
             self?.pokemonModel = savedItem
-            self?.delegate?.setSaveButtonState(state: true)
+            self?.delegate?.setSaveButtonState(state: true,enabled: true)
             let text = self?.provideTranslation(pokemon:savedItem,shakespeare:savedItem.shakespeare,error:nil) ?? ""
             self?.delegate?.setShakespeareText(text: text)
             self?.delegate?.reloadSprites()
@@ -102,7 +103,7 @@ public class PokemonFinderViewModel : NSObject {
         
         DBHelper.instance.pokemons.subscribe(onNext: {[weak self] items in
             guard let id = self?.pokemonModel?.id else {return}
-            self?.delegate?.setSaveButtonState(state: items.contains(where: {$0.id == id}))
+            self?.delegate?.setSaveButtonState(state: items.contains(where: {$0.id == id}),enabled: true)
         }).disposed(by: disposeBag)
     }
     

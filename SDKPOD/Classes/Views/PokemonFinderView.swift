@@ -179,9 +179,10 @@ extension PokemonFinderView : PokemonViewModelDelegate {
         self.shakespeareTextView?.text = text
     }
     
-    func setSaveButtonState(state: Bool){
+    func setSaveButtonState(state: Bool,enabled: Bool){
         self.saveButton?.setTitle(state ? "Saved" : "Save", for: .normal)
         self.saveButton?.backgroundColor = state ? UIColor.green.withAlphaComponent(0.5) : UIColor.white
+        self.saveButton?.isEnabled = enabled
     }
 
 }
