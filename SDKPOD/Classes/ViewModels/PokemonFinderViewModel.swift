@@ -45,6 +45,10 @@ public class PokemonFinderViewModel : NSObject {
                 if (pokemonModel?.shakespeare != nil){
                     refreshShakespeareText()
                 }
+            }else{
+                self.spritesList = []
+                self.delegate?.setShakespeareText(text: "")
+                delegate?.reloadSprites()
             }
         }
     }
@@ -68,8 +72,6 @@ public class PokemonFinderViewModel : NSObject {
             guard let keyword = value else {return}
             guard keyword.count > 0 else {
                 self?.pokemonModel = nil
-                self?.delegate?.setShakespeareText(text: "")
-                self?.delegate?.reloadSprites()
                 return
             }
             guard let savedItem = DBHelper.containsItem(keyword: keyword) else {
